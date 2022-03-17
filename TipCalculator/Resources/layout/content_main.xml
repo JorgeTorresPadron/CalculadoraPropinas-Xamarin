@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" 
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/inputBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR"
+        tools:ignore="HardcodedText" />
+        
+        <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <TextView
+            android:text="Propina: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/outputTip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <TextView
+            android:text="Total: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/outputTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+</LinearLayout>
